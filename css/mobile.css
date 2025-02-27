@@ -1,0 +1,48 @@
+@media (max-width:480px) {
+    .main_tag {
+        padding-block: 16px;
+    }
+
+    /* section1  */
+
+    .form_section {
+        row-gap: 40px;
+    }
+
+    .input_section {
+        flex-direction: column;
+        row-gap: 36px;
+    }
+
+    .textarea_section {
+        margin-block: 36px;
+    }
+
+    /* section2 */
+
+    .map_div {
+        height: 200px;
+    }
+}
+
+@media(max-width:376px) {
+    .bg_image {
+        padding-inline: 8px
+    }
+
+    .main_tag {
+        padding-inline: 8px;
+        row-gap: 48px;
+    }
+
+    /* section1 */
+
+    .form_section {
+        row-gap: 24px;
+    }
+
+    .contact_us {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

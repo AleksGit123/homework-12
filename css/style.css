@@ -1,0 +1,254 @@
+@import url(variables.css);
+
+
+.bg_image {
+    background-image: url(../images/Rectangle\ 3.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-block: 64px;
+    padding: 62px 140px;
+
+}
+
+
+
+.main_tag {
+    width: 100%;
+    /* width: min(100%, 1160px); */
+    background-color: rgba(28, 19, 37, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    border: 1px solid var(--border_color);
+    display: flex;
+    column-gap: 66px;
+    padding: 40px;
+    animation: appear 1.5s ease 1;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* section1  */
+
+
+.form_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    border-radius: 20px;
+}
+
+.contact_us {
+    font-family: var(--family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 2px 4px 4px var(--bg_color);
+    transition: .4s;
+
+}
+
+.contact_us:hover {
+    text-shadow: 2px 35px 0 #FFFFFF;
+    color: var(--bg_color);
+}
+
+
+
+.input_section {
+    display: flex;
+    column-gap: 24px;
+}
+
+.input_textarea {
+    font-family: var(--family);
+    background-color: transparent;
+    border: 1px solid var(--border_color);
+    border-radius: 8px;
+    outline: none;
+    color: #FFFFFF;
+    padding: 11px 0 11px 11px;
+    transition: .3s;
+}
+
+.input_textarea:hover {
+    box-shadow: 0 0 10px 0 var(--border_color), 0 0 10px 0 var(--border_color),
+        0 0 10px 0 var(--border_color);
+    transform: scale(1.02);
+}
+
+.user_input {
+    width: 100%;
+    height: 48px;
+
+}
+
+
+::placeholder {
+    font-family: var(--family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+
+}
+
+.textarea_section {
+    display: flex;
+    flex-direction: column;
+    margin-block: 40px;
+
+}
+
+.form_label {
+    font-family: var(--family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.detail_text {
+    height: 112px;
+    width: 100%;
+    resize: none;
+}
+
+.submit_button {
+    width: 100%;
+    height: 64px;
+    background-color: var(--bg_color);
+    border: 0;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: var(--family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    transition: .5s;
+}
+
+.submit_button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 7px 7px var(--border_color);
+}
+
+/* section2 */
+.contact_section {
+    width: 100%;
+    display: flex;
+    row-gap: 72px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button_section {
+    display: flex;
+    column-gap: 72px;
+}
+
+.contact_button {
+
+    background-color: var(--bg_color);
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 24px;
+    color: #FFFFFF;
+    transition: all .5s;
+}
+
+.contact_button:hover {
+    box-shadow: 0 4px 5px #FFFFFF;
+    transform: translateY(-5px);
+}
+
+.phone::before {
+
+    content: "\f2a0";
+    /* animation: phoneShake .5s linear 1; */
+
+}
+
+.phone:hover::before {
+    display: inline-block;
+    animation: phoneShake .5s linear 1;
+}
+
+@keyframes phoneShake {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    30% {
+        transform: rotate(-15deg);
+    }
+
+    60% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.mail::before {
+    content: "\f0e0";
+    transition: 1s ease;
+}
+
+.mail:hover::before {
+    content: "\f2b6";
+}
+
+.map::before {
+    content: "\f3c5";
+    transition: .4s;
+}
+
+.map:hover::before {
+    color: rgb(224, 0, 0);
+}
+
+.map_link {
+    display: flex;
+    background-image: url(../images/iframe.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 338px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.map_link:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,8 @@
+@media (max-width:800px) {
+    .main_tag {
+        flex-direction: column;
+        row-gap: 64px;
+        padding-inline: 16px;
+    }
+
+}
