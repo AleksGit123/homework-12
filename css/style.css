@@ -237,10 +237,7 @@
 }
 
 .map_link {
-    display: flex;
-    background-image: url(../images/iframe.png);
-    background-position: center;
-    background-size: cover;
+    display: inline-block;
     border-radius: 10px;
     width: 100%;
     height: 338px;
