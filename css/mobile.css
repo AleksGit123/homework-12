@@ -1,4 +1,8 @@
 @media (max-width:480px) {
+    .bg_image {
+        padding-inline: 20px;
+    }
+
     .main_tag {
         padding-block: 16px;
     }
@@ -19,8 +23,11 @@
     }
 
     /* section2 */
+    .button_section {
+        column-gap: 42px;
+    }
 
-    .map_div {
+    .map_link {
         height: 200px;
     }
 }
@@ -44,5 +51,13 @@
     .contact_us {
         font-size: 24px;
         line-height: 32px;
+    }
+
+    .input_section {
+        row-gap: 24px;
+    }
+
+    .textarea_section {
+        margin-block: 24px;
     }
 }

@@ -1,4 +1,9 @@
 @media (max-width:800px) {
+
+    .bg_image {
+        padding-block: 32px;
+    }
+
     .main_tag {
         flex-direction: column;
         row-gap: 64px;

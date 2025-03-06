@@ -2,5 +2,9 @@
     .bg_image {
         padding-inline: 24px;
     }
-}
 
+    .form_section,
+    .contact_section {
+        width: 100%;
+    }
+}
